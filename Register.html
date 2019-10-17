@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="card" style="width: 25rem;">
+            <div class="card-body">
+                <form>
+                    <div>
+                        <h2>Đăng kí môn học</h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Họ và Tên</label>
+                        <input type="email" class="form-control" id="name" aria-describedby="emailHelp" />
+                    </div>
+                    <div class="form-group">
+                        <label for="id-name">Mã số sinh viên</label>
+                        <input type="password" class="form-control" id="id-name" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label>Ngày Tháng Năm Sinh</label>
+                        <input type="date" class="form-control" id="picker">
+                    </div>
+
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Giới tính</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">Nam</option>
+                            <option value="2">Nữ</option>
+                            <option value="3">Khác</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputDiaChi">Địa Chỉ</label>
+                        <input type="password" class="form-control" id="exampleInputDiaChi" />
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Môn học đăng kí</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">Kỹ Thuật Lập Trình</option>
+                            <option value="2">Lập Trình Web</option>
+                            <option value="3">Mạng máy tính căn bản</option>
+                            <option value="4">Hệ Điều Hành</option>
+                        </select>
+                    </div>
+
+                    <button type="submit1" class="btn btn-primary">Đăng kí</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>

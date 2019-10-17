@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="card" style="width: 18rem;">
+      <div class="card-header" style="background-color: lightskyblue;">
+        <div class="form-group">
+          <label>Sign in</label><br />
+          <div class="text-right">
+            <label>Forgot password?</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="User">Username or Email</label>
+            <input type="email" class="form-control" id="User" aria-describedby="emailHelp"
+              placeholder="Username or Email" />
+          </div>
+          <div class="form-group">
+            <label for="Password1">Password</label>
+            <input type="password" class="form-control" id="Password" placeholder="Password" />
+          </div>
+
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+
+          <button class="btn btn-primary" style="background-color: lawngreen;" onclick="Check()">
+            Login
+          </button>
+          <button type="submit1" class="btn btn-primary">
+            Login With Facebook
+          </button>
+
+          <div class="form-group">
+            <label>Don't have an account!</label>
+            <label style="color: lightskyblue;">Sign Up Here </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function CheckUser() {
+      const User1 = document.getElementById("User");
+      const TK = ["tanhuy@gmail.com"];
+      if (TK.includes(User1.value)) {
+        return true;
+      }
+      return false;
+    }
+    function CheckPassword() {
+      const Password1 = document.getElementById("Password");
+      const pas = ["111"];
+      if (pas.includes(Password1.value)) {
+        return true;
+      }
+      return false;
+    }
+    function Check() {
+      if (CheckUser() && CheckPassword()) {
+        alert("Dang nhap thanh cong");
+      } else {
+        alert("sai");
+      }
+    }
+  </script>
+</body>
+
+</html>
